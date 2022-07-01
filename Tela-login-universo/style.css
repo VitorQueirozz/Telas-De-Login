@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #B563A5;
+    --cor2: #4E094C;
+    --cor3: #731F6D;
+    --cor4: #080226;
+    --cor5: #02020E;
+}
+
+/*Gradient - #02010F #793E82 #F2D2DD #995B9E #18082F*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+    height: 100vh;
+}
+
+div.img {
+    background-image: url('imagens/nebulosa.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.tudo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    width: 500px;
+    height: 45vh;
+    background-color: rgba(0, 0, 0, 0.322);
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.281);
+}
+
+header {
+    font-size: 1.5em;
+    color: var(--cor1);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.usuario {
+    font-size: 1.3em;
+    text-align: left;
+    padding: 20px 50px 10px 20px;
+}
+
+.senha {
+    font-size: 1.3em;
+    text-align: left;
+    padding: 10px 50px 10px 20px;
+}
+
+.botao {
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.input {
+    background-image: linear-gradient(to right, #02010F, #793E82, #995B9E, #F2D2DD);
+    color: var(--cor2);
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+button {
+    width: 100%;
+    font-size: 1.3em;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    font-weight: bolder;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+button:hover {
+    background-color: var(--cor3);
+    color: var(--cor4);
+}
+
+section label {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+section ::placeholder {
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--cor1);
+}
